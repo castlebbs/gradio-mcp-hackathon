@@ -2,7 +2,10 @@
 ## Modal remote function
 This code deploys the text_to_3d remote function to Modal.
 
-### FLUX Pipeline Models:
+### FLUX Pipeline Models
+
+Here is a description of the different models used in this pipeline.
+
 1. **T5 Text Encoder** 
    - Type: Transformer-based text encoder
    - Function: Converts text prompts to embeddings
@@ -11,10 +14,10 @@ This code deploys the text_to_3d remote function to Modal.
 2. **FLUX Transformer2D Model**
    - Type: Diffusion transformer for image generation
    - Function: Core image generation from text embeddings
-   - Optimization: GGUF q8_0 quantization
+   - Optimization: GGUF q8_0 quantization (from https://huggingface.co/gokaygokay)
    - LoRA Models Applied:
      - **Hyper FLUX 8Steps LoRA**: Reduces inference steps from ~20-50 to 8
-     - **Flux Game Assets LoRA**: Improves 3D asset generation quality
+     - **gokaygokay's Flux Game Assets LoRA**: Improves 3D asset generation quality
 
 ### TRELLIS Pipeline Models:
 3. **TRELLIS-image-large**
@@ -37,4 +40,9 @@ This code deploys the text_to_3d remote function to Modal.
    - Function: Creates 1024x1024 textures for 3D models
 7. **GLB Exporter**
    - Function: Combines gaussian splatting + mesh into GLB format
+
+### Pipeline Sequence
+![pipeline-sequence](https://github.com/user-attachments/assets/5268a95f-8b6a-48e3-8bcc-86028b69ab46)
+
+
 
