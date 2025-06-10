@@ -114,29 +114,10 @@ gradio-mcp-hackathon/
 - **LoRA Models**: Hyper FLUX 8Steps for faster inference, Game Assets LoRA for better 3D results
 - **Modal Scaling**: Automatic scaling for concurrent requests
 
-## 🎯 Hackathon Goals
-
-This project demonstrates:
-- ✅ **MCP Integration**: Seamless AI-to-AI communication
-- ✅ **Gradio Excellence**: Beautiful, functional web interface  
-- ✅ **AI Innovation**: Novel application of LLMs for 3D content creation
-- ✅ **Technical Excellence**: Optimized pipeline with modern ML techniques
-- ✅ **User Experience**: Simple workflow hiding complex AI operations
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🏆 Hackathon Team
+
+- castlebbs@
+- stargarnet@
+- zinkenite@
 
 Built with ❤️ for the 2025 Gradio Agent MCP Hackathon
