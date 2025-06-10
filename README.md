@@ -1,7 +1,7 @@
 # 🎮 3D Scene Asset Generator
 ### Our participation to the 2025 Gradio Agent MCP Hackathon
 
-> Transform player biographies into personalized 3D environments using AI-powered analysis and 3D asset generation models.
+> Transform player biographies into personalized 3D environments using LLM-powered analysis and 3D asset generation models pipelines.
 
 ## 🌟 Project Overview
 
@@ -121,3 +121,9 @@ gradio-mcp-hackathon/
 - zinkenite@
 
 Built with ❤️ for the 2025 Gradio Agent MCP Hackathon
+
+## Links
+
+- https://huggingface.co/black-forest-labs/FLUX.1-dev
+- https://huggingface.co/microsoft/TRELLIS-image-large
+- https://huggingface.co/spaces/gokaygokay/Flux-TRELLIS
