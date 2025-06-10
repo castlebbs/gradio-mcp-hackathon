@@ -18,7 +18,8 @@ This hackathon project creates a 3D scene generator that analyzes player biograp
 
 ## 🏗️ Architecture
 
-[Placeholder for image]
+![MCP Hackaton-3](https://github.com/user-attachments/assets/b135ce3a-43d6-4f1d-855b-92af4bce65c0)
+
 
 Thank you to gokaygokay for the GGUF
 
