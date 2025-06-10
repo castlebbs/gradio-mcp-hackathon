@@ -42,7 +42,7 @@ Thank you to gokaygokay for the GGUF
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/gradio-mcp-hackathon.git
+   git clone https://github.com/castlebbs/gradio-mcp-hackathon.git
    cd gradio-mcp-hackathon
    ```
 
