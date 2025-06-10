@@ -1,0 +1,13 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://bghfspgb5637s"]
+
+[ext_resource type="Texture2D" uid="uid://cglglsdh3b2ha" path="res://environment/christmas_photo_studio_07_2k.hdr" id="1_5vyg5"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_48he2"]
+panorama = ExtResource("1_5vyg5")
+
+[sub_resource type="Sky" id="Sky_hcf0u"]
+sky_material = SubResource("PanoramaSkyMaterial_48he2")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_hcf0u")

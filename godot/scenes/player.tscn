@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://du2kfqfevyua6"]
+
+[ext_resource type="Script" uid="uid://dx2bg1u8r82o7" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://ds7xy7v26gmsu" path="res://scripts/camera_pivot.gd" id="2_g2els"]
+[ext_resource type="Script" uid="uid://bwr07aseehfud" path="res://scripts/mouse_lock.gd" id="3_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://b3ddduueh8w73" path="res://models/HuggingFace.fbx" id="3_qlg0r"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
+radius = 0.260891
+height = 0.641522
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("animation_player")]
+script = ExtResource("1_3vyb7")
+animation_player = NodePath("PlayerMesh/HuggingFace/AnimationPlayer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.318375, 0)
+shape = SubResource("CapsuleShape3D_u8vuu")
+
+[node name="PlayerMesh" type="Node3D" parent="."]
+
+[node name="HuggingFace" parent="PlayerMesh" instance=ExtResource("3_qlg0r")]
+transform = Transform3D(-0.3, 0, -2.62268e-08, 0, 0.3, 0, 2.62268e-08, 0, -0.3, 0, 0.371552, 0)
+
+[node name="Skeleton3D" parent="PlayerMesh/HuggingFace/Armature" index="0"]
+bones/0/position = Vector3(0, 0, 0)
+bones/3/position = Vector3(-0.00595468, 0.00846492, -0.00731097)
+bones/3/rotation = Quaternion(0.6711, -0.222767, 0.222767, 0.6711)
+bones/6/position = Vector3(0.00595468, 0.00846492, -0.00731097)
+bones/6/rotation = Quaternion(0.6711, 0.222767, -0.222767, 0.6711)
+
+[node name="Cube" parent="PlayerMesh/HuggingFace/Armature/Skeleton3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+bone_idx = 1
+
+[node name="Cube_002" parent="PlayerMesh/HuggingFace/Armature/Skeleton3D" index="1"]
+transform = Transform3D(4.38911e-07, 1.1268, -0.764888, -1.36188, 5.27635e-07, 0, 2.26191e-07, 0.764888, 1.1268, -0.00880056, 0.0085432, -0.0037781)
+bone_idx = 4
+
+[node name="Cube_001" parent="PlayerMesh/HuggingFace/Armature/Skeleton3D" index="2"]
+transform = Transform3D(2.60246e-07, -1.1268, 0.764888, 1.36188, 3.24698e-07, 0, -1.94168e-07, 0.764889, 1.1268, 0.00880056, 0.0085432, -0.0037781)
+bone_idx = 7
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("2_g2els")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
+
+[node name="MouseLock" type="Node3D" parent="."]
+script = ExtResource("3_qhqgy")
+
+[editable path="PlayerMesh/HuggingFace"]
