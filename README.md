@@ -1,6 +1,8 @@
 # 🎮 3D Scene Asset Generator
 ### Our participation to the 2025 Gradio Agent MCP Hackathon
 
+https://huggingface.co/spaces/Agents-MCP-Hackathon/3D-Game-Environment-Builder
+
 > Transform player biographies into personalized 3D environments using LLM-powered analysis and 3D asset generation models pipelines.
 
 [![Watch the video](https://img.youtube.com/vi/09Dk9OL65bc/0.jpg)](https://youtu.be/09Dk9OL65bc)
