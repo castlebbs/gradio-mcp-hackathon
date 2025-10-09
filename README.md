@@ -3,6 +3,10 @@
 
 > Transform player biographies into personalized 3D environments using LLM-powered analysis and 3D asset generation models pipelines.
 
+[![Watch the video](https://img.youtube.com/vi/09Dk9OL65bc/0.jpg)](https://youtu.be/09Dk9OL65bc)
+[![Watch the video](https://img.youtube.com/vi/JbpwDwk8IcI/0.jpg)](https://youtu.be/JbpwDwk8IcI)
+
+
 ## 🌟 Project Overview
 
 This hackathon project creates a 3D scene generator that analyzes player biographies and automatically generates personalized 3D environments. By combining the power of LLM analysis with generation models (FLUX + Trellis), we create unique, contextual 3D assets that reflect each player's personality, interests, and background.
